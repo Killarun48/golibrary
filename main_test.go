@@ -50,7 +50,7 @@ func TestAuthor(t *testing.T) {
 			wantBody:   "{\"code\":200,\"success\":true,\"message\":\"автор создан\"}\n",
 		},
 		{
-			name: "CreateAuthor",
+			name: "error create author",
 			body: `{"name": "Rodney William Whitaker","birthDate": "1931-06-12"}`,
 			authorService: func(user models.Author) error {
 				return fmt.Errorf("error")
