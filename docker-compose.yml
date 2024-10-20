@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: library
+    ports:
+      - "8080:8080"
